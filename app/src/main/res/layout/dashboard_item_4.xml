@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_16sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="@dimen/_50sdp"
+    android:layout_height="@dimen/_50sdp"
+    app:cardBackgroundColor="@color/dashboard_itm_4"
+    app:cardCornerRadius="@dimen/_14sdp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_8sdp"
+        android:src="@drawable/paste"
+        android:tint="@color/white"
+        />
+</com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingHorizontal="@dimen/_40sdp"
+         android:paddingVertical="@dimen/_16sdp"
+         >
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/_422"
+         android:id="@+id/TVAmount"
+         android:textColor="@color/primary"
+         android:textStyle="bold"
+         android:textSize="@dimen/_14ssp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         />
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="@string/hydrochloric_acid"
+             android:id="@+id/textTitle"
+             android:textColor="@color/primary_txt"
+             android:textSize="@dimen/_14ssp"
+             android:layout_marginEnd="@dimen/_8sdp"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toStartOf="@id/TVAmount"
+             />
+         <androidx.appcompat.widget.AppCompatImageView
+             android:layout_width="@dimen/_12sdp"
+             android:layout_height="@dimen/_12sdp"
+             android:layout_marginTop="@dimen/_4sdp"
+             android:src="@drawable/location"
+             android:id="@+id/imgLocation"
+             app:layout_constraintStart_toStartOf="@id/textTitle"
+             app:layout_constraintTop_toBottomOf="@id/textTitle"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/karachi"
+             android:id="@+id/textLoc"
+             android:textColor="@color/secondary_txt"
+             android:textSize="@dimen/_10ssp"
+             app:layout_constraintTop_toTopOf="@id/imgLocation"
+             app:layout_constraintStart_toEndOf="@id/imgLocation"
+             app:layout_constraintBottom_toBottomOf="@id/imgLocation"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/_9am_to_9pm"
+             android:id="@+id/textTime"
+             android:textColor="@color/secondary_txt"
+             android:textSize="@dimen/_10ssp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="@id/textLoc"
+             app:layout_constraintTop_toBottomOf="@id/textLoc"
+             />
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
